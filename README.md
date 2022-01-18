@@ -1,1 +1,1 @@
-# resolve_cors_errer.github.oi
+# resolve_cors_errer_in_php
