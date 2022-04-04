@@ -14,3 +14,8 @@
 
     echo ($result);
 ?>
+
+
+// 다른 해결 방법
+
+<?php header('Access-Control-Allow-Origin: *')?>
