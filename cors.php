@@ -1,5 +1,6 @@
+// Resolution_1
+
 <?php
-    // [call api] start ------
     $url = "URL"
 
     $ch = curl_init();
@@ -10,12 +11,16 @@
     $result = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE) . "";
     curl_close($ch);
-    // ------ [call api] end
 
-    echo ($result);
+    echo $result;
 ?>
 
 
-// 다른 해결 방법
+// Resolution_2
 
-<?php header('Access-Control-Allow-Origin: *')?>
+<?php
+    $url = "URL";
+
+    $resString = file_get_contents($url);
+    echo $resString;
+?>
